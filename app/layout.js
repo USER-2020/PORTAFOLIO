@@ -5,9 +5,8 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="zulu" />
-        <meta name="author" content="zulu" />
+        <meta name="viewport" content="portafolio empresa noble creations para desarrollos a la medida y diseño UI/UX" />
+        <meta name="author" content="noble" />
         <meta name="theme-color" content="#000000" />
         <link
           rel="apple-touch-icon"
@@ -18,18 +17,19 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/favicon.ico.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/favicon.ico.png"
         />
 
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="icon" href="/favicon.ico" />
-        <title>Zulu.Co 🎮</title>
+        <link rel="icon" href="/favicon.ico.png" />
+        <title>NOBLE</title>
+        
       </head>
       <body>{children}</body>
     </html>

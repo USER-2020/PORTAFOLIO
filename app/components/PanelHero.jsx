@@ -36,9 +36,9 @@ export const PanelHero = () => {
             className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 hover:scale-110"
           >
             <IconSend className="h-6 w-6" />
-            Contáctame
+            Contáctanos
           </a>
-          <a
+          {/* <a
             href="https://drive.google.com/drive/folders/19i53YEdfM8CsZw7c94yfjHs6rdTRF-Y3?usp=sharing"
             className="bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16 w-56 hover:scale-110"
             target="_blank"
@@ -46,10 +46,10 @@ export const PanelHero = () => {
           >
             <IconArrowBarToDown className="h-6 w-6" />
             Descargar CV
-          </a>
+          </a> */}
         </div>
         <div className="flex flex-col items-center justify-center relative">
-          <p className="text-xl md:text-2xl font-semibold">Hola 🙌, somos</p>
+          {/* <p className="text-xl md:text-2xl font-semibold">Hola 🙌, somos</p> */}
           <h1
             className="text-6xl md:text-9xl font-bold flex flex-col items-center animate-gradient"
             style={{
@@ -61,11 +61,14 @@ export const PanelHero = () => {
             }}
           >
             NOBLE
-            {/* <span>CODE</span> */}
+            <span>STUDIOS</span>
           </h1>
-          <p className="text-xl p-3 text-center md:text-2xl font-semibold">
-            Software Developer - Design UX/UI.
+          {/* <p className="text-xl p-3 text-center md:text-2xl font-semibold">
+            Software Development
           </p>
+          <p className="text-xl p-3 text-center md:text-2xl font-semibold">
+            Design UX/UI
+          </p> */}
         </div>
       </div>
     </section>

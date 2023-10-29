@@ -38,7 +38,7 @@ export const AboutMe = () => {
             </a> Estamos aquí para colaborar en la realización de tus proyectos.
           </p>
           </p>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <div className="flex flex-col items-center">
               <h1 className="text-4xl font-bold">Nuestra trayectoria.</h1>
               <span className="text-base text-[var(--text-secondary)]">
@@ -74,7 +74,7 @@ export const AboutMe = () => {
 
             </div>
             <TimeLine showEducation={showEducation} />
-          </div>
+          </div> */}
       </div>
     </section>
   );

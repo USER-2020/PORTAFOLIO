@@ -4,15 +4,16 @@ import Image from "next/image";
 const projectsInfo = [
   {
     id: 1,
-    proyecto_title: "Telolimpio Antofa",
+    proyecto_title: "E-COMMERCE ATTIENDA",
     proyecto_description:
-      "Permite hacer compras de la empresa telolimpio antofa la cual ofrece servicios de limpieza integral para residencias y oficinas en la ciudad de antofagasta, Chile.",
-    proyecto_url_web: "https://www.telolimpioantofa.cl/",
-    proyecto_url_github:"https://github.com/johnses8",
+      "Permite hacer compras en el comercio electrónico ATTIENDA con su respectiva pasarela de pagos y su admin panel para el manejo amigable de tus productos y clientes, actualmente es un comercio 100% Colombiano.",
+    proyecto_url_web: "https://attienda.com.co",
+    proyecto_url_github:"https://github.com/USER-2020",
     proyecto_tecnologias: [
-      "Wix",
-      "TypeScript",
-      "Frontend",
+      "Laravel",
+      "PHP",
+      "Wompi",
+      "FullStack",
       "Diseño UX",
       "Diseño UI"
     ],
@@ -69,7 +70,7 @@ export const ProjectCard = () => {
         >
           
           <Image
-            src={`/images/project-${project.id}.webp`}
+            src={`/images/project-${project.id}.png`}
             alt={project.proyecto_title}
             className={`rounded-t md:w-3/5 w-auto object-cover md:absolute ${
               index % 2 === 0 ? "md:right-0" : "md:left-0"

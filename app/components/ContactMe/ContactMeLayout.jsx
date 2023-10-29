@@ -32,7 +32,7 @@ export const ContactMeLayout = () => {
             className="flex gap-2 items-center justify-center md:justify-start text-xl mt-3"
           >
             <IconMail className="h-8 w-8" />
-            <p className="font-bold">noble.com</p>
+            <p className="font-bold">nobleco.brand@gmail.com</p>
           </a>
         </div>
         <div className="w-full md:w-2/4 justify-center items-center ">

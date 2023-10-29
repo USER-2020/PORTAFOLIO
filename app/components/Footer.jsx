@@ -7,22 +7,22 @@ export const Footer = () => {
       <div className="u-center">
         <div className="flex flex-col items-center">
           <p className="text-4xl mt-10 font-bold">
-            Gracias por visitar mi sitio web! 😊
+            Gracias por visitar nuestro sitio web! 😊
           </p>
           <a
             href="#contactame"
             className="mt-10 font-bold text-2xl bg-[var(--bg-buttons)] text-[var(--text-buttons)] rounded flex items-center gap-2 justify-center h-16  w-56 hover:scale-110"
             aria-label="contactame"
           >
-            Contactáme
+            Contactános
           </a>
-          <p className="mt-10">O también me puedes contactar a través de:</p>
+          <p className="mt-10">O también nos puedes contactar a través de:</p>
           <ul className="m-5 flex gap-2">
             <SocialsIcons />
           </ul>
         </div>
         <p className="font-bold text-lg mb-2">
-          Hecho con ❤️ Zulu.
+          Hecho con ❤️.
         </p>
       </div>
     </section>

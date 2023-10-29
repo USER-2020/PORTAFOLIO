@@ -8,7 +8,9 @@ import {
   ContactMeLayout,
   ProjectsLayout,
   ButtonToTop,
+  NuestroGrupodeTrabajo
 } from "./components";
+
 
 export default function HomePage() {
   return (
@@ -16,6 +18,7 @@ export default function HomePage() {
       <Header />
       <PanelHero />
       <AboutMe />
+      <NuestroGrupodeTrabajo/>
       <ProjectsLayout />
       <ContactMeLayout />
       <Footer />
