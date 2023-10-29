@@ -10,7 +10,7 @@ const navLinks = [
   },
   {
     id: 2,
-    text: "Nuestros proyectos",
+    text: "Grupo de trabajo",
     href: "#misProyectos",
   },
   {

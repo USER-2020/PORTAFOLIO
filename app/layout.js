@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="portafolio empresa noble creations para desarrollos a la medida y diseño UI/UX" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="noble" />
         <meta name="theme-color" content="#000000" />
         <link
