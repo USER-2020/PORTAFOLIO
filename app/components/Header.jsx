@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons";
 import { ThemeToggler } from "./ThemeToggler/ThemeToggler";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -86,6 +87,15 @@ export const Header = () => {
             aria-label="Home"
             className="text-3xl font-extrabold text-[var(--foreground)] hover:scale-110 transition-all duration-300 "
           >
+            
+              <Image
+                src={`/Logos/Logo-1.png`}
+                alt=""
+                priority
+                width={200}
+                height={128}
+              />
+            
             {/* {"{ NobleCode & Design Creations }"} */}
             {/* {"{ </> }"} */}
           </a>
