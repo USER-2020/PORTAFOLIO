@@ -20,42 +20,40 @@ const projectsInfo = [
   },
   {
     id: 2,
-    proyecto_title: "Homecenter App",
+    proyecto_title: "Atraverssiamo Glamping",
     proyecto_description:
-      "Permite buscar productos de la tienda homecenter y hacer compras desde la misma pagina un proyecto personal que replica el funcionamiento de la tienda homecenter.",
+      "Atraverssiamo es más que un simple destino; es un desarrollo web cuidadosamente diseñado para ofrecerte una experiencia única en medio de la naturaleza colombiana. Captura la identidad digital del glamping en el Eje Cafetero.",
     proyecto_url_github:
-      "https://github.com/johnses8/Ing-software-2.git",
-    proyecto_url_web: "",
+      "https://github.com/USER-2020",
+    proyecto_url_web: "https://attraversiamoglamping.netlify.app",
     proyecto_tecnologias: [
-      "Laravel",
-      "Blade",
+      "React",
+      "Redux",
       "Html",
       "CSS",
-      "JavaScript",
-      "PhP",
-      "MySQL",
+      "TypeScript"
     ],
   },
   {
     id: 3,
-    proyecto_title: "Proyecto Pauli y Zulu",
+    proyecto_title: "METALFORM",
     proyecto_description:
-      "Permite la visualizacion de un e-commerce de video juegos el cual tiene un crud para los productos y tambien informacion variada.",
+      "Desarrollamos una Landing Page que conecta a los pioneros en el manejo del metal en la ciudad de Manizales, ampliando su identidad digital, atrayendo a más clientes y destacando sus servicios.",
     proyecto_url_github:
-      "https://github.com/johnses8/proyectopauli.git",
-    proyecto_url_web: "",
-    proyecto_tecnologias: ["Html", "JavaScryot", "TypeScript", "CSS"],
+      "https://github.com/USER-2020",
+    proyecto_url_web: "https://metalform.netlify.app",
+    proyecto_tecnologias: ["Html", "JavaScript", "CSS"],
   },
   {
     
     id: 4,
-    proyecto_title: "CRUD",
+    proyecto_title: "TRABAJO PERSONAL",
     proyecto_description:
-      "Crud que calcula el promedio acomulado de la universidad nacional sede manizales. ",
+      "Un álbum descriptivo en el que los nombres, las fechas de cumpleaños y las canciones favoritas de un grupo de amigos se entrelazan en una crónica emocional. Esta obra captura los momentos inolvidables, revela las conexiones especiales y celebra la singularidad de cada individuo en este círculo de amistad.",
     proyecto_url_github:
-      "https://github.com/johnses8/progamwebnativo.git",
-    proyecto_url_web: "/",
-    proyecto_tecnologias: ["PhP", "Html", "TypeScript"],
+      "https://github.com/USER-2020",
+    proyecto_url_web: "https://friendssforever.netlify.app",
+    proyecto_tecnologias: ["Html", "TypeScript", "JavaScript", "Swiper"],
   },
 ];
 

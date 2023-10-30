@@ -17,17 +17,17 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon.ico.png"
+          href="/Logos/Logo-3.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon.ico.png"
+          href="/Logos/Logo-3.png"
         />
 
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="icon" href="/favicon.ico.png" />
+        <link rel="icon" href="/Logos/Logo-3.png" />
         <title>KUMANDAY STUDIOS</title>
         
       </head>
