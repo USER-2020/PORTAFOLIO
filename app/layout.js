@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
 
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico.png" />
-        <title>NOBLE</title>
+        <title>KUMANDAY STUDIOS</title>
         
       </head>
       <body>{children}</body>

@@ -1,6 +1,11 @@
 import React from 'react'
 import { IconFolder, IconBrandGithub, IconWorld } from "@tabler/icons";
 import Image from "next/image";
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+// Default theme
+import '@splidejs/react-splide/css';
+
 
 const teamWork = [
 
@@ -84,12 +89,122 @@ const teamWork = [
         id: 3,
         tecnologia: "Python",
       },
-      
+
     ],
   },
 ];
 
+const tecnologies = [
+  {
+    id: 1,
+    title: "Java",
+    width:200,
+    height:200
+  },
+  {
+    id: 2,
+    title: "SpringBoot",
+    width:200,
+    height:200
+  },
+  {
+    id: 3,
+    title: "Angular",
+    width:200,
+    height:200
+  },
+  {
+    id: 4,
+    title: "HTML",
+    width:100,
+    height:100
+  },
+  {
+    id: 5,
+    title: "CSS",
+    width:100,
+    height:100
+  },
+  {
+    id: 6,
+    title: "Javascript",
+    width:100,
+    height:100
+  },
+  {
+    id: 7,
+    title: "Node.js",
+    width:200,
+    height:200
+  },
+  {
+    id: 8,
+    title: "React",
+    width:200,
+    height:200
+  },
+  {
+    id: 9,
+    title: "Photoshop",
+    width:100,
+    height:100
+  },
+  {
+    id: 10,
+    title: "Ilustrator",
+    width:100,
+    height:100
+  },
+  {
+    id: 11,
+    title: "VRay",
+    width:400,
+    height:300
+  },
+  {
+    id: 12,
+    title: "SketchUp",
+    width:100,
+    height:100
+  },
+  {
+    id: 13,
+    title: "Autocad",
+    width:200,
+    height:200
+  },
+  {
+    id: 14,
+    title: "PHP",
+    width:200,
+    height:200
+  },
+]
+
+
+
+const options = {
+  type: 'loop',
+  drag: 'free',
+  perPage: 5,
+  arrows: false,
+  pagination: false,
+  autoScroll: {    
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    rewind: false,
+    speed: -1
+  },
+
+};
+
+
+
 export const NuestroGrupodeTrabajo = () => {
+
+
+
+
   return (
     <section id="misProyectos" className="u-center">
       <div className="w-full flex flex-col justify-center pt-4 items-center border-t-2 border-[var(--bg-hover)]">
@@ -130,6 +245,15 @@ export const NuestroGrupodeTrabajo = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-12">
+        <Splide options={options} extensions={{AutoScroll}}>
+          {tecnologies.map(slide => (
+            <SplideSlide key={slide.id}>
+              <img src={`/Tecnologias/tecnologia-${slide.id}.png`} alt={slide.name} width={slide.width} height={slide.height}/>
+            </SplideSlide>
+          ))}
+        </Splide>
       </div>
     </section>
   )

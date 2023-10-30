@@ -60,7 +60,7 @@ export const PanelHero = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            NOBLE
+            KUMANDAY
             <span>STUDIOS</span>
           </h1>
           {/* <p className="text-xl p-3 text-center md:text-2xl font-semibold">
