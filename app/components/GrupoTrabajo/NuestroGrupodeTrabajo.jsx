@@ -250,7 +250,8 @@ export const NuestroGrupodeTrabajo = () => {
         <Splide options={options} extensions={{AutoScroll}}>
           {tecnologies.map(slide => (
             <SplideSlide key={slide.id}>
-              <img src={`/Tecnologias/tecnologia-${slide.id}.png`} alt={slide.name} width={slide.width} height={slide.height}/>
+              {/* <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={slide.width} height={slide.height}/> */}
+              <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={100} height={100}/>
             </SplideSlide>
           ))}
         </Splide>

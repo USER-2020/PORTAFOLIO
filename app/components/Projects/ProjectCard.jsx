@@ -15,7 +15,8 @@ const projectsInfo = [
       "Wompi",
       "FullStack",
       "Diseño UX",
-      "Diseño UI"
+      "Diseño UI",
+      "MySQL"
     ],
   },
   {
