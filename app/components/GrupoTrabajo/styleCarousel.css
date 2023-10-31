@@ -1,0 +1,17 @@
+.Desktop {
+    display: flex;
+}
+
+.Movil {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .Desktop {
+        display: none;
+    }
+
+    .Movil {
+        display: flex;
+    }
+}
