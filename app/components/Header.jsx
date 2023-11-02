@@ -27,7 +27,7 @@ export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [themeImage, setThemeImage] = useState("NEGRO.svg");
+  const [themeImage, setThemeImage] = useState("BLANCO.svg");
 
   const handleThemeChange = (newTheme) => {
     // Cambia la imagen en función del tema
