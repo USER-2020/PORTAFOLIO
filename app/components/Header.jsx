@@ -27,6 +27,13 @@ export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [themeImage, setThemeImage] = useState("NEGRO.svg");
+
+  const handleThemeChange = (newTheme) => {
+    // Cambia la imagen en función del tema
+    setThemeImage(newTheme === "dark" ? "BlANCO.svg" : "NEGRO.svg");
+  };
+
 
   const toggleMenu = () => {
     const menu = document.getElementById("navbar-mobile");
@@ -87,15 +94,15 @@ export const Header = () => {
             aria-label="Home"
             className="text-3xl font-extrabold text-[var(--foreground)] hover:scale-110 transition-all duration-300 "
           >
-            
-              <Image
-                src={`/Logos/NEGRO.svg`}
-                alt=""
-                priority
-                width={200}
-                height={128}
-              />
-            
+
+            <Image
+              src={`/Logos/${themeImage}`}
+              alt=""
+              priority
+              width={200}
+              height={128}
+            />
+
             {/* {"{ NobleCode & Design Creations }"} */}
             {/* {"{ </> }"} */}
           </a>
@@ -149,7 +156,7 @@ export const Header = () => {
                 </a>
               );
             })}
-            <ThemeToggler />
+            <ThemeToggler onThemeChangue ={handleThemeChange} />
           </ul>
         </div>
       </section>
