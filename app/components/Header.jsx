@@ -89,7 +89,7 @@ export const Header = () => {
           >
             
               <Image
-                src={`/Logos/logoNOBLE.svg`}
+                src={`/Logos/NEGRO.svg`}
                 alt=""
                 priority
                 width={200}
