@@ -17,17 +17,17 @@ export default function RootLayout({ children }) {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/Logos/Logo-3.png"
+          href="/Logos/logoNOBLE.svg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/Logos/Logo-3.png"
+          href="/Logos/logoNOBLE.svg"
         />
 
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="icon" href="/Logos/Logo-3.png" />
+        <link rel="icon" href="/Logos/logoNOBLE.svg" />
         <title>KUMANDAY STUDIOS</title>
         
       </head>
