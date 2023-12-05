@@ -56,6 +56,14 @@ const projectsInfo = [
     proyecto_url_web: "https://friendssforever.netlify.app",
     proyecto_tecnologias: ["Html", "TypeScript", "JavaScript", "Swiper"],
   },
+  // {
+  //   id: 5,
+  //   proyecto_title: "PORTAFOLIO",
+  //   proyecto_description:"Portafolio de renderismo y diseño arquitectónico",
+  //   proyecto_url_github:"#",
+  //   proyecto_url_web:"https://www.behance.net/gallery/184604497/Portafolio-de-Arquitectura-Renderista",
+  //   proyecto_tecnologias:["Photoshop","Ilustrator"],
+  // }
 ];
 
 export const ProjectCard = () => {

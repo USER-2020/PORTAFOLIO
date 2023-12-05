@@ -17,7 +17,7 @@ const teamWork = [
       "Un experto sobresaliente en el universo del desarrollo frontend, con una trayectoria de éxito que habla por sí misma. Su dedicación incansable, creatividad inagotable y compromiso con la excelencia son motores clave detrás de su liderazgo en proyectos digitales de alto nivel.",
     proyecto_url_github:
       "https://github.com/johnses8/To-doapps/tree/main/app-to-do",
-    proyecto_url_web: "https://jade-croquembouche-c4a60f.netlify.app/",
+    proyecto_url_web: "https://www.behance.net/gallery/185159283/Portafolio-2023",
     person_tecnologias: [
       {
         id: 1,
@@ -45,7 +45,7 @@ const teamWork = [
       "Un maestro en el diseño de renders y la creación de material visual, con una carrera sobresaliente que se refleja en su portafolio impresionante. Su destreza para dar vida a la visión, su meticulosidad en cada detalle y su experiencia en diseño UI/UX para mejorar la experiencia del usuario lo sitúan como un líder indiscutible en proyectos visuales de alto calibre.",
     proyecto_url_github:
       "https://github.com/gianlucadonofrio/react-basics/tree/main/calculadora",
-    proyecto_url_web: "https://graceful-taffy-84e9b7.netlify.app/",
+    proyecto_url_web: "https://www.behance.net/gallery/184604497/Portafolio-de-Arquitectura-Renderista",
     person_tecnologias: [
       {
         id: 1,
@@ -72,7 +72,7 @@ const teamWork = [
       "Un maestro en desarrollo backend de élite, construyendo las bases invisibles pero sólidas del mundo digital. Su experiencia en la gestión de datos, seguridad y escalabilidad, combinada con una trayectoria de éxito en la implementación de sistemas eficientes, lo convierte en un pilar fundamental en el desarrollo de aplicaciones y plataformas web.",
     proyecto_url_github:
       "https://github.com/johnses8/To-doapps/tree/main/contador-de-clicks",
-    proyecto_url_web: "https://gleaming-sawine-355a2c.netlify.app/",
+    proyecto_url_web: "https://portafolio-full-stack.netlify.app/",
     person_tecnologias: [
       {
         id: 1,
@@ -211,38 +211,40 @@ export const NuestroGrupodeTrabajo = () => {
         <h1 className="text-4xl font-bold">Nuestro grupo de trabajo</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 bg">
           {teamWork.map((project, index) => (
-            <div
-              key={project.id}
-              className="border mt-5 rounded-lg border-[var(--hover-nav)] shadow-2xl shadow-[var(--nav-shadow)] p-5 hover:backdrop-filter backdrop-blur-lg hover:bg-[var(--bg-hover)] hover:bg-opacity-10 transition-all ease-in-out hover:border-[var(--bg-hover)] cursor-pointer"
-            >
-              <div className="text-center">
-                <Image
-                  src={`/WOrkGroup/personaje-${project.id}.png`}
-                  alt={project.person_name}
-                  className="rounded-full w-32 h-32 mx-auto"
-                  priority
-                  width={128}
-                  height={128}
-                />
-              </div>
+            <a href={project.proyecto_url_web}>
+              <div
+                key={project.id}
+                className="border mt-5 rounded-lg border-[var(--hover-nav)] shadow-2xl shadow-[var(--nav-shadow)] p-5 hover:backdrop-filter backdrop-blur-lg hover:bg-[var(--bg-hover)] hover:bg-opacity-10 transition-all ease-in-out hover:border-[var(--bg-hover)] cursor-pointer"
+              >
+                <div className="text-center">
+                  <Image
+                    src={`/WOrkGroup/personaje-${project.id}.png`}
+                    alt={project.person_name}
+                    className="rounded-full w-32 h-32 mx-auto"
+                    priority
+                    width={128}
+                    height={128}
+                  />
+                </div>
 
-              <h1 className="text-3xl font-bold mt-4 text-center">
-                {project.person_name}
-              </h1>
-              <p className="text-lg mt-3">{project.person_description}</p>
-              <div className="flex flex-row justify-center items-center mt-4 gap-4 font-bold flex-wrap">
-                {project.person_tecnologias.map((tecnologia) => (
-                  <div
-                    key={tecnologia.id}
-                    className="bg-[var(--bg-buttons)] text-white rounded-lg px-3 py-1"
-                  >
-                    {tecnologia.tecnologia}
-                  </div>
-                ))}
-              </div>
+                <h1 className="text-3xl font-bold mt-4 text-center">
+                  {project.person_name}
+                </h1>
+                <p className="text-lg mt-3">{project.person_description}</p>
+                <div className="flex flex-row justify-center items-center mt-4 gap-4 font-bold flex-wrap">
+                  {project.person_tecnologias.map((tecnologia) => (
+                    <div
+                      key={tecnologia.id}
+                      className="bg-[var(--bg-buttons)] text-white rounded-lg px-3 py-1"
+                    >
+                      {tecnologia.tecnologia}
+                    </div>
+                  ))}
+                </div>
 
-              {/* Otro contenido que puedas querer incluir debajo de la imagen y el título */}
-            </div>
+                {/* Otro contenido que puedas querer incluir debajo de la imagen y el título */}
+              </div>
+            </a>
           ))}
         </div>
       </div>
@@ -251,9 +253,9 @@ export const NuestroGrupodeTrabajo = () => {
           {tecnologies.map(slide => (
             <SplideSlide key={slide.id}>
               {/* <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={slide.width} height={slide.height}/> */}
-              <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={100} className='Desktop'/>
-              <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={50} className='Movil'/>
-             
+              <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={100} className='Desktop' />
+              <img src={`/Tecnologias/logosescalasgrises/tecnologia-${slide.id}.png`} alt={slide.name} width={50} className='Movil' />
+
             </SplideSlide>
           ))}
         </Splide>
