@@ -21,9 +21,9 @@ export const Footer = () => {
             <SocialsIcons />
           </ul>
         </div>
-        <p className="font-bold text-lg mb-2">
+        {/* <p className="font-bold text-lg mb-2">
           Hecho con ❤️.
-        </p>
+        </p> */}
       </div>
     </section>
   );

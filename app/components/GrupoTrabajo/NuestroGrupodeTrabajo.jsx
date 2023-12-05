@@ -14,7 +14,7 @@ const teamWork = [
     id: 1,
     person_name: "Alejandro Salazar",
     person_description:
-      "Un experto sobresaliente en el universo del desarrollo frontend, con una trayectoria de éxito que habla por sí misma. Su dedicación incansable, creatividad inagotable y compromiso con la excelencia son motores clave detrás de su liderazgo en proyectos digitales de alto nivel.",
+      "Un experto excepcional en el universo del desarrollo frontend, su destacada trayectoria es un testimonio elocuente de su maestría. La dedicación incansable, una creatividad inagotable y un compromiso inquebrantable con la excelencia son los pilares que respaldan su liderazgo en proyectos digitales de alto nivel, que trasciende en la vanguardia del desarrollo web moderno.",
     proyecto_url_github:
       "https://github.com/johnses8/To-doapps/tree/main/app-to-do",
     proyecto_url_web: "https://www.behance.net/gallery/185159283/Portafolio-2023",
@@ -211,11 +211,11 @@ export const NuestroGrupodeTrabajo = () => {
         <h1 className="text-4xl font-bold">Nuestro grupo de trabajo</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 bg">
           {teamWork.map((project, index) => (
-            <a href={project.proyecto_url_web}>
-              <div
-                key={project.id}
-                className="border mt-5 rounded-lg border-[var(--hover-nav)] shadow-2xl shadow-[var(--nav-shadow)] p-5 hover:backdrop-filter backdrop-blur-lg hover:bg-[var(--bg-hover)] hover:bg-opacity-10 transition-all ease-in-out hover:border-[var(--bg-hover)] cursor-pointer"
-              >
+            <div
+              key={project.id}
+              className="border mt-5 rounded-lg border-[var(--hover-nav)] shadow-2xl shadow-[var(--nav-shadow)] p-5 hover:backdrop-filter backdrop-blur-lg hover:bg-[var(--bg-hover)] hover:bg-opacity-10 transition-all ease-in-out hover:border-[var(--bg-hover)] cursor-pointer"
+            >
+              <a href={project.proyecto_url_web}>
                 <div className="text-center">
                   <Image
                     src={`/WOrkGroup/personaje-${project.id}.png`}
@@ -231,6 +231,7 @@ export const NuestroGrupodeTrabajo = () => {
                   {project.person_name}
                 </h1>
                 <p className="text-lg mt-3">{project.person_description}</p>
+                
                 <div className="flex flex-row justify-center items-center mt-4 gap-4 font-bold flex-wrap">
                   {project.person_tecnologias.map((tecnologia) => (
                     <div
@@ -241,10 +242,9 @@ export const NuestroGrupodeTrabajo = () => {
                     </div>
                   ))}
                 </div>
-
-                {/* Otro contenido que puedas querer incluir debajo de la imagen y el título */}
-              </div>
-            </a>
+              </a>
+              {/* Otro contenido que puedas querer incluir debajo de la imagen y el título */}
+            </div>
           ))}
         </div>
       </div>
